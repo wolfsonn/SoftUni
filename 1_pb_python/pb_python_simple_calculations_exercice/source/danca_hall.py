@@ -1,0 +1,10 @@
+import math
+l = float(input())
+w = float(input())
+a = float(input())
+hall_area = float(l * w * 10000)
+wardrobe_area = float(a * a * 10000)
+bench_area = float(hall_area / 10)
+dancer_area = int(7040)
+dancer_number = math.floor(abs(hall_area - wardrobe_area - bench_area) / dancer_area)
+print(dancer_number)

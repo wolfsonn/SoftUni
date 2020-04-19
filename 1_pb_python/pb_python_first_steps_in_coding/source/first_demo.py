@@ -1,0 +1,5 @@
+date_number = input()
+date_number = int(date_number)
+number = input()
+number = int(number)
+print(date_number + number)

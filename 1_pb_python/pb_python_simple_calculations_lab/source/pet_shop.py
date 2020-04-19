@@ -1,0 +1,6 @@
+number_of_dogs = int(input())
+number_of_others = int(input())
+bag_dog_food = float(2.5)
+bag_other_food = float(4)
+food_total = float((number_of_dogs * bag_dog_food) + (number_of_others * bag_other_food))
+print(f'{food_total:.2f} lv.')

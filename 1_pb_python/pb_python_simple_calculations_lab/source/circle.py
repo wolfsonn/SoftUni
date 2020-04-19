@@ -1,0 +1,5 @@
+r = float(input())
+circle_area = float(r * r * 3.14159265359)
+circle_circumference = float(r * 2 * 3.14159265359)
+print(f'{circle_area:.2f}')
+print(f'{circle_circumference:.2f}')
