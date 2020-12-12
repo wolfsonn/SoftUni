@@ -1,0 +1,23 @@
+li {
+    padding-left: 40px;
+    list-style-type: none;
+}
+
+section div {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+}
+
+section div div {
+    display: block;
+    text-align: center;
+    width: 200px;
+}
+
+.fa.vacant, .fas.vacant {
+    color: green;
+}
+
+

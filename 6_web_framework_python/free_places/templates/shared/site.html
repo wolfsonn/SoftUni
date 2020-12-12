@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Places</title>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    {% block head_content %}
+    {% endblock %}
+</head>
+<body>
+<nav class="nav">
+    <div>
+        <i class="fas fa-hospital-symbol"></i>
+        <ul>
+            <li>
+                <a class="nav-link" href="">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" href="">All pet photos</a>
+            </li>
+            <li>
+                <a class="nav-link" href="">Add pet photo</a>
+            </li>
+        </ul>
+        <ul>
+{#            {% if user.is_authenticated %}#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="{% url 'user profile' user.id %}">{{ user.username }}</a>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="{% url 'signout user' %}">Sign out</a>#}
+{#                </li>#}
+{#            {% else %}#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="{% url 'login' %}">Sing in</a>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="{% url 'signup user' %}">Sign Up</a>#}
+{#                </li>#}
+{#            {% endif %}#}
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    {% block site_content %}
+    {% endblock %}
+</div>
+</body>
+<script src="https://kit.fontawesome.com/08f4ab4ebb.js" crossorigin="anonymous"></script>
+</html>
